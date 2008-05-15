@@ -1,4 +1,16 @@
 ========================
+2008-05-15 10:57:24 0.06
+========================
+
+  2008-05-15 10:54:47 (r10) by bingos
+  lib/POE/Component/Server/POP3.pm M; LICENSE A; MANIFEST M; Makefile.PL
+  M; Changes M; lib/POE/Component/Server/POP3/Constants.pm M;
+  t/99_test_kwalitee.t D
+
+    Removed kwalitee test, added license information, detach_myself if we
+    find we are a child session
+
+========================
 2008-04-08 11:35:40 0.04
 ========================
 
