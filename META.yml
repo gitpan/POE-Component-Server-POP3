@@ -3,24 +3,38 @@ abstract: 'A POE framework for authoring POP3 servers'
 author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
 build_requires:
+  ExtUtils::MakeMaker: 6.42
   Test::More: 0.47
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.72'
+generated_by: 'Module::Install version 0.91'
 license: perl
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
-  version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: POE-Component-Server-POP3
 no_index:
   directory:
+    - examples
     - inc
     - t
+provides:
+  POE::Component::Server::POP3:
+    file: lib/POE/Component/Server/POP3.pm
+    version: 0.08
+  POE::Component::Server::POP3::Constants:
+    file: lib/POE/Component/Server/POP3/Constants.pm
+    version: 0.08
 requires:
   POE: 0.38
   POE::Component::Pluggable: 0.03
   POE::Filter::Line: 0
   POE::Wheel::ReadWrite: 0
   POE::Wheel::SocketFactory: 0
-  Socket: 0
-  perl: 5.000
-version: 0.06
+  perl: 5.6.0
+resources:
+  homepage: http://github.com/bingos/poe-component-server-pop3/tree
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/bingos/poe-component-server-pop3.git
+version: 0.08
