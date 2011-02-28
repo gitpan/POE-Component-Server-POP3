@@ -8,7 +8,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.91'
+generated_by: 'Module::Install version 1.00'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -22,10 +22,10 @@ no_index:
 provides:
   POE::Component::Server::POP3:
     file: lib/POE/Component/Server/POP3.pm
-    version: 0.08
+    version: 0.10
   POE::Component::Server::POP3::Constants:
     file: lib/POE/Component/Server/POP3/Constants.pm
-    version: 0.08
+    version: 0.10
 requires:
   POE: 0.38
   POE::Component::Pluggable: 0.03
@@ -37,4 +37,4 @@ resources:
   homepage: http://github.com/bingos/poe-component-server-pop3/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/poe-component-server-pop3.git
-version: 0.08
+version: 0.10
